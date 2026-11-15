@@ -7,6 +7,7 @@ add_library(
         mirage_tank_encoder.cpp
         lsb_tank_encoder.cpp
         lsb_tank_decoder.cpp
+        prism_tank_encoder.cpp
         encrypt.cpp
 )
 
