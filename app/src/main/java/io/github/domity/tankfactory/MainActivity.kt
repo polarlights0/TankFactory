@@ -38,6 +38,8 @@ import io.github.domity.tankfactory.lsbtank.LSBTankMakerScreen
 import io.github.domity.tankfactory.lsbtank.LSBTankViewerScreen
 import io.github.domity.tankfactory.miragetank.MirageTankMakerScreen
 import io.github.domity.tankfactory.miragetank.MirageTankViewerScreen
+import io.github.domity.tankfactory.prismtank.PrismTankMakerScreen
+import io.github.domity.tankfactory.prismtank.PrismTankViewerScreen
 import io.github.domity.tankfactory.ui.about.AboutDialog
 import io.github.domity.tankfactory.ui.theme.TankFactoryTheme
 
@@ -47,6 +49,8 @@ object ScreenRoutes {
     const val MAKE_MIRAGE = "make_Mtank"
     const val VIEW_LSB = "view_LSBTank"
     const val MAKE_LSB = "make_LSBtank"
+    const val VIEW_PRISM = "view_PTank"
+    const val MAKE_PRISM = "make_PTank"
     const val VIEW_ENCRYPT = "view_encrypt"
     const val MAKE_ENCRYPT = "make_encrypt"
 }
@@ -80,6 +84,8 @@ fun AppNavigator() {
         composable(ScreenRoutes.MAKE_MIRAGE) { MirageTankMakerScreen() }
         composable(ScreenRoutes.MAKE_LSB) { LSBTankMakerScreen() }
         composable(ScreenRoutes.VIEW_LSB) { LSBTankViewerScreen() }
+        composable(ScreenRoutes.VIEW_PRISM) { PrismTankViewerScreen() }
+        composable(ScreenRoutes.MAKE_PRISM) { PrismTankMakerScreen() }
         composable(ScreenRoutes.VIEW_ENCRYPT) { EncryptViewerScreen() }
         composable(ScreenRoutes.MAKE_ENCRYPT) { EncryptMakerScreen() }
     }
@@ -149,6 +155,26 @@ fun MainMenuScreen(
                         onClick = { onNavigate(ScreenRoutes.MAKE_LSB) },
                         isPrimary = true,
                         modifier = Modifier.weight(1f) ,
+                        cutCorners = CutCorners(topLeft = 8.dp, topRight = 8.dp, bottomLeft = 8.dp, bottomRight = 8.dp)
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(24.dp))
+
+                Row(
+                    horizontalArrangement = Arrangement.spacedBy(16.dp)
+                ) {
+                    CyberButton(
+                        text = stringResource(id = R.string.view_prism_tank),
+                        onClick = { onNavigate(ScreenRoutes.VIEW_PRISM) },
+                        modifier = Modifier.weight(1f),
+                        cutCorners = CutCorners(topLeft = 8.dp, topRight = 8.dp, bottomLeft = 8.dp, bottomRight = 8.dp)
+                    )
+                    CyberButton(
+                        text = stringResource(id = R.string.make_prism_tank),
+                        onClick = { onNavigate(ScreenRoutes.MAKE_PRISM) },
+                        isPrimary = true,
+                        modifier = Modifier.weight(1f),
                         cutCorners = CutCorners(topLeft = 8.dp, topRight = 8.dp, bottomLeft = 8.dp, bottomRight = 8.dp)
                     )
                 }

@@ -51,8 +51,39 @@
     <string name="encrypt_viewer_decrypt_failed">解密失败，密码可能不正确</string>
     <string name="encrypt_viewer_tips">提示\n1. 请输入加密时生成的密码\n2. 如果密码不正确，解密会失败\n3. 图片默认保存到Download目录</string>
 
+
+    <string name="prism_tank_maker_inner_threshold">里图色阶: %d</string>
+    <string name="prism_tank_maker_cover_threshold">表图色阶: %d</string>
+    <string name="prism_tank_maker_inner_contrast">里图对比度: %d</string>
+    <string name="prism_tank_maker_cover_contrast">表图对比度: %d</string>
+    <string name="prism_tank_maker_inner_gray">里图取灰度</string>
+    <string name="prism_tank_maker_cover_gray">表图取灰度</string>
+    <string name="prism_tank_maker_slope">花纹斜率: %d</string>
+    <string name="prism_tank_maker_gap">花纹间距: %d</string>
+    <string name="prism_tank_maker_direction">花纹方向: %s</string>
+    <string name="prism_tank_direction_row">行</string>
+    <string name="prism_tank_direction_column">列</string>
+    <string name="prism_tank_maker_reverse">反向（表图更暗 / 里图更亮）</string>
+    <string name="prism_tank_maker_max_size">最大长边: %d</string>
+    <string name="prism_tank_maker_tips">提示\n1.里图色阶越低隐藏得越好，表图色阶越高显形效果越好\n2.花纹间距越大隐藏得越好，显形效果越差\n3.取灰度能显著提升抗压缩能力\n4.建议保存为PNG；转成JPEG或经社交平台压缩后会掉效果\n5.图片默认保存到Download目录</string>
+
+    <string name="prism_tank_viewer_lower_threshold">下限阈值: %d</string>
+    <string name="prism_tank_viewer_higher_threshold">上限阈值: %d</string>
+    <string name="prism_tank_viewer_contrast">对比度: %d</string>
+    <string name="prism_tank_viewer_iterations">平滑迭代次数: %d</string>
+    <string name="prism_tank_viewer_method">填充方式</string>
+    <string name="prism_method_black">填充黑</string>
+    <string name="prism_method_white">填充白</string>
+    <string name="prism_method_transparent">透明</string>
+    <string name="prism_method_copy_left">复制左</string>
+    <string name="prism_method_copy_top">复制上</string>
+    <string name="prism_method_ltavg">平滑填充</string>
+    <string name="prism_tank_viewer_tips">提示\n1.没效果就调上下限阈值：区间越窄显形越干净，但越容易出现缺块\n2.“平滑填充”配合迭代次数可以把缺块补得更自然\n3.里图明暗关系通常是反的，可以试试“反向”\n4.图片默认保存到Download目录</string>
+
     <string name="view_mirage_tank">查看幻影坦克</string>
     <string name="make_mirage_tank">制作幻影坦克</string>
+    <string name="view_prism_tank">查看光棱坦克</string>
+    <string name="make_prism_tank">制作光棱坦克</string>
     <string name="view_lsb_tank">查看无影坦克</string>
     <string name="make_lsb_tank">制作无影坦克</string>
     <string name="make_encrypt">图片加密</string>
