@@ -1,5 +1,4 @@
-# Tank Factory
-## 没归档就是还在，不干了自会归档
+二改，新增光棱坦克
 ## 基本信息
 - 参考自[战车工厂](https://github.com/fEndman/WarFactory)，[幻影坦克工厂](https://github.com/TankFactory/Mirage_Colored)
 - **本应用仅供交流学习，禁止用于违法用途。用户因不当使用本软件所造成的一切后果由用户自行承担责任。**
